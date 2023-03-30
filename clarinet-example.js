@@ -1,3 +1,4 @@
+//https://github.com/dscape/clarinet/blob/master/example.js
 //var clarinet = require("clarinet")
 var numSpaces = 0
 function spaces (){return "".padStart(numSpaces)}

@@ -1,3 +1,4 @@
+//https://github.com/dscape/clarinet/blob/master/clarinet.js
 ;(function (clarinet) {
     "use strict";
   
