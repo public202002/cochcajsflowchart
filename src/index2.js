@@ -4,11 +4,11 @@ import FlowTreeBuilder, {
     ABSTRACTION_LEVELS,
     MODIFIER_PRESETS,
     DEFINED_MODIFIERS
-} from 'builder/FlowTreeBuilder';
-import SVGRender, { ShapesTreeEditor } from 'render/svg/SVGRender';
-import PresentationGenerator from 'presentation-generator/PresentationGenerator';
-import { TOKEN_TYPES, MODIFIED_TYPES } from 'shared/constants';
-    
+} from './builder/FlowTreeBuilder.js';
+import SVGRender, { ShapesTreeEditor } from './render/svg/SVGRender.js';
+import PresentationGenerator from './presentation-generator/PresentationGenerator.js';
+import { TOKEN_TYPES, MODIFIED_TYPES } from './shared/constants.js';
+
 export const createFlowTreeBuilder = FlowTreeBuilder;
 export const createFlowTreeModifier = createFlowTreeModifierFromBuilder;
 
