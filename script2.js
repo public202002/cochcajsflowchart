@@ -28,13 +28,21 @@ function indexSearch(list, element) {
 const {createFlowTreeBuilder, convertCodeToFlowTree,createSVGRender} = js2flowchart;
 
 
-const flowTree = convertCodeToFlowTree(`const longNamelongNamelongNamelongNamelongName = 1`),
-    svgRender = createSVGRender();
+//const flowTree = convertCodeToFlowTree(`const longNamelongNamelongNamelongNamelongName = 1`),
+const flowTree = convertCodeToFlowTree(code),
+svgRender = createSVGRender();
 
 //applying another theme for render
 svgRender.applyTheme({
     common: {
-        maxNameLength: 10
+        maxNameLength: 100,
+        fontSize:30,
+        verticalPadding: 12,
+        symbolWidth: 17,
+        fontWeight:"boldw"
+    },
+    BaseShape:{
+      fontSize:26
     }
 });
 
